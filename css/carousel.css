@@ -92,9 +92,9 @@ body {
 	}
 }
 
-@media (min-width: 600px) and (max-width: 600px) {
-	#login #signup .contactBtn1 {
+@media (min-width: 600px) and (max-height: 600px) {
+	#login,
+	#signup {
 		display: none !important;
-		display: hiden;
 	}
 }

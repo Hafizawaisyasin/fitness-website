@@ -35,31 +35,14 @@
     />
 	
 	<style>
-	.contactBtn{
-	width: 50px;
-    background: #b7c6dc;
-    border-radius: 10%;
-    text-align: center;
-    vertical-align: middle;
-    box-shadow: 2px 2px 2px #595858;
-    margin-left: 25px;
-	}
-  .contactBtn1{
-	width: 50px;
-    background: #b7c6dc;
-    border-radius: 10%;
-    text-align: center;
-    vertical-align: middle;
-    box-shadow: 2px 2px 2px #595858;
-    margin-right: 20px;
-	}
+ 
 	html{
 	background-color: black;}
 	</style>
   </head>
   <body class="p-0" >
     <header class="black">
-      <nav class=" navbar navbar-expand-lg  navbar-fixed-top navbar-default">
+      <nav class=" navbar navbar-expand-lg  navbar-fixed-top navbar-default ">
         <a class="navbar-brand" href="#">
           <img src="./images/logowhite.png" alt="logo" style="width: 25%; padding-left: 1rem" />
         </a>
@@ -72,41 +55,35 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" style="background-color:gray;"><i style="color: blanchedalmond;"class="fas fa-bars"></i></span>
+          <span class="navbar-toggler-icon" style="background-color:gray;"><i style="color: #000;"class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto ">
             <li class="nav-item active">
-              <a class="nav-link text-white btn-outline-primary px-3 active" href="#home"><i class="fas fa-home"></i> </a>
+              <a class="nav-link text-black btn-outline-primary px-3 active" href="#home"><i class="fas fa-home"></i> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white btn-outline-primary px-2" href="#aboutus">About Us</a>
+              <a class="nav-link text-black btn-outline-primary px-2" href="#aboutus">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white btn-outline-primary px-2" href="#product">Products</a>
+              <a class="nav-link text-black btn-outline-primary px-2" href="#product">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white btn-outline-primary px-2" href="#article">Articles</a>
+              <a class="nav-link text-black btn-outline-primary px-2" href="#article">Articles</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white btn-outline-primary px-2" href="#service">Services</a>
+              <a class="nav-link text-black btn-outline-primary px-2" href="#service">Services</a>
             </li>
             <li class="nav-item">
               
-              <a class="nav-link text-white btn-outline-primary px-2" href="#team">Team</a>
+              <a class="nav-link text-black btn-outline-primary px-2" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white btn-outline-primary px-2" href="#contactus">Contact US</a>
+              <a class="nav-link text-black btn-outline-primary px-2" href="#contactus">Contact US</a>
             </li>
           </ul>
 		 
           <ul class="navbar-nav">
-            <li class="nav-item active hdie">
-              <a class="nav-link contactBtn" href="tel:923466392886"><i class="fas fa-phone-volume phone"></i>  </a>
-            </li>
-            <li class="nav-item hide">
-              <a class="nav-link contactBtn1" href="mailto:awais154@gmail.com"><i class="far fa-envelope email"></i></a>
-            </li>
             <li class="nav-item">
               <a class="nav-link " href="#" id="login">Login</a>
             </li>
@@ -114,6 +91,7 @@
               <a class="nav-link" href="#" id="signup">Sign Up</a>
             </li>
           </ul>
+
           <form class="form-inline mt-2 mt-md-0 d-md-none d-lg-none d-xs-block d-sm-block">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -121,6 +99,7 @@
         </div>
       </nav>
     </header>
+
 
     <main role="main ">
       <section id="home">
@@ -256,6 +235,26 @@
         </div>
       </div>
     </section>
+    <!--contact form-->
+    <button class="open-button" onclick="openForm()">Contact US</button>
+
+		<div class="form-popup" id="myForm">
+			<form action="/action_page.php" class="form-container">
+				<h1 style="color: aliceblue">Contact US</h1>
+
+				<label for="email" style="color: aliceblue"><b>Type Your Query</b></label>
+				<input type="text" placeholder="Enter Query" name="email" required />
+
+   
+                    <a class="nav-link contactBtn btn" href="tel:923466392886"><i style="color: #ceebcf; "class="fas fa-phone-volume phone"></i>  </a>
+
+    
+                    <a class="nav-link contactBtn1 btn" href="mailto:awais154@gmail.com"><i style="color: #ceebcf;" class="far fa-envelope email"></i></a>
+           
+
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+		</div>
       <!--end search bar-->
       <!-- Marketing messaging and featurettes
   ================================================== -->

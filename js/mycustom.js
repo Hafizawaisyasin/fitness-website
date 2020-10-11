@@ -1,3 +1,11 @@
+function openForm() {
+	document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+}
+
 $(function () {
 	$(".dropdown-item").click(function () {
 		var icon_text = $(this).html();
@@ -131,7 +139,7 @@ $(document).ready(function () {
 	$(window).scroll(function () {
 		var scroll = $(window).scrollTop();
 		if (scroll > 300) {
-			$(".black").css("background", "blue");
+			$(".black").css("background", "#4c3c3c");
 		} else {
 			$(".black").css("background", "#333");
 		}
